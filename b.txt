@@ -1,0 +1,1 @@
+{'prediction': "Not Parkinson's", 'user_values': {'f1': 493.52, 'f2': 1642.99, 'f3': 1824.15, 'mean_intensity': 58.29, 'mean_pitch': 140.38}, 'thresholds': {'pitch': 116.09, 'intensity': 67.89, 'f1': 1343.93, 'f2': 1688.41, 'f3': 1495.4}, 'differences': {'pitch_diff': 24.29, 'intensity_diff': -9.6, 'f1_diff': -850.41, 'f2_diff': -45.42, 'f3_diff': 328.75}}

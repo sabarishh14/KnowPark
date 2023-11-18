@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Prediction Result</h1>
+        Prediction: {{data['prediction']}} <br> <br>
+        F1: User Value: {{data['user_values']['f1']}}, Threshold: {{data['thresholds']['f1']}}, Difference: {{data['differences']['f1_diff']}} <br> <br>
+        F2: User Value: {{data['user_values']['f2']}}, Threshold: {{data['thresholds']['f2']}}, Difference: {{data['differences']['f2_diff']}} <br> <br>      
+        F3: User Value: {{data['user_values']['f3']}}, Threshold: {{data['thresholds']['f3']}}, Difference: {{data['differences']['f3_diff']}} <br> <br>
+        Mean Pitch: User Value: {{data['user_values']['mean_pitch']}}, Threshold: {{data['thresholds']['pitch']}} <br> <br>
+        Mean Intensity: User Value: {{data['user_values']['mean_intensity']}}, Threshold: {{data['thresholds']['intensity']}} <br>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const result = params.get('result');
+            document.getElementById('predictionResult').textContent = result || 'No result available.';
+        });
+    </script>
+</body>
+</html>
