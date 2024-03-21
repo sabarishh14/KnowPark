@@ -1,4 +1,4 @@
-![image](https://github.com/sabarishh14/knowpark/assets/110752601/9c9c2e19-1b60-4321-aa6e-aefdbb952813)## KNOWPARK Parkinson's Disease Detection System
+## KNOWPARK Parkinson's Disease Detection System
 
 This project aims to develop a Parkinson's Disease Detection System leveraging AI
 algorithms, specifically Genetic Algorithm and heuristic techniques. The system
